@@ -32,5 +32,15 @@ console.log(x > y);
 console.log(x < y);
 
 // Operadores lógicos
+console.log(x != y && x > y); // AND
+console.log(x > y || x < y); // OR
+console.log(!(x < y)); // NOT
+
+//Conversão de tipos
+const meuNumero = "123";
+console.log(typeof meuNumero);
+const meuNumeroConvertido = parseInt(meuNumero);
+console.log(typeof meuNumeroConvertido);
+console.log(typeof String(meuNumeroConvertido));
     
 </script>
