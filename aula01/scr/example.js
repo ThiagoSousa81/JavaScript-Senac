@@ -60,11 +60,23 @@ else
 
 // Programa para avaliar média de alunos
 
-const nota1 = 7.7;
-const nota2 = 8.5;
-const nota3 = 3.7;
+var nota1 = 7.7;
+var nota2 = 8.5;
+var nota3 = 3.7;
+const notaS = 6.5;
 
-var mediaPonderada = ((nota1 * 3) + (nota2 * 3) + (nota3 * 4)) / 3 + 3 + 4;
+if (nota1 < nota2 && nota1 < nota3 ) {
+	nota1 = notaS;
+}
+else if (nota2 < nota3 && nota2 < nota1 ) {
+	nota2 = notaS;
+}
+else if (nota3 < nota1 && nota3 < nota2 ) {
+	nota3 = notaS;
+}
+
+
+var mediaPonderada = ((nota1 * 3) + (nota2 * 3) + (nota3 * 4) + (notaS * 1)) / 3 + 3 + 4 + 1;
 
 if(mediaPonderada > 6){
 	console.log("Aluno aprovado!");
