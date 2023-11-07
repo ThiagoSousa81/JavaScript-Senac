@@ -1,1 +1,8 @@
-console.log("Hello word");
+const message ="Encryption's Builder Studio<br>Security Systems" // Try edit me
+
+// Update header text
+document.querySelector('#header').innerHTML = message
+
+
+// Log to console
+console.log(message)
