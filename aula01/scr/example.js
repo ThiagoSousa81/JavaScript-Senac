@@ -26,11 +26,11 @@ console.log(x / y);
 
 
 // Operadores de comparação
-console.log(x == y);
+console.log(x == y); // === é para comparar tipos e valores ao msm tempo
 console.log(x != y);
 console.log(x > y);
 console.log(x < y);
 
-//
+// Operadores lógicos
     
 </script>
