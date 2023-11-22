@@ -4,3 +4,4 @@
 - ### [Aula 01](https://github.com/ThiagoSousa81/JavaScript-Senac/tree/main/aula01)
 - ### [Aula 02](https://github.com/ThiagoSousa81/JavaScript-Senac/tree/main/aula02)
 - ### [Aula 03](https://github.com/ThiagoSousa81/JavaScript-Senac/tree/main/aula03)
+- ### [Calculadora Simples](https://github.com/ThiagoSousa81/JavaScript-Senac/tree/main/Calculadora%20SImples)
