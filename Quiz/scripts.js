@@ -1,4 +1,3 @@
-// Questões
 const questions = [
     {
         question: "Qual estrutura de programação foi criada para tratamento de erros?",
@@ -61,7 +60,7 @@ function loadQuestion() {
 function shuffleArray (array) {
     let currentIndex = array.length, temporaryValue, randomIndex;
 
-    while (0 != currentIndex) {
+    while (0 !== currentIndex) {
         randomIndex = Math.floor(Math.random() * currentIndex);
         currentIndex -= 1;
         temporaryValue = array[currentIndex];
@@ -74,9 +73,9 @@ function shuffleArray (array) {
 }
 
 function checkAnswer(e) {
-    if (answerChosen) {
-        answerChosen = true;
-    }
+    if (answerChosen) return;
+    answerChosen = true;
+    
     if (e.target.innerText === questions[currentQuestion].answer){
         score ++;
         scoreElement.innerText = "Pontuação: " + score;
