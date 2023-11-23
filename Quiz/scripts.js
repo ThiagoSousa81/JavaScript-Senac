@@ -1,5 +1,5 @@
 // Questões
-const question = [
+const questions = [
     {
         question: "Qual estrutura de programação foi criada para tratamento de erros?",
         choices: ["for", "do while", "try catch", "switch case"],
@@ -29,20 +29,93 @@ const question = [
         question: "Como se chama a estrutura de controle de fluxo que executa um bloco de código se uma condição for verdadeira e outro se for falsa?",
         choices: ["if else", "for", "switch case", "while"],
         answer: "if else",
-    }
+    },
 ];
 
 const questionElement = document.getElementById("question");
-const choiseElements = Array.from(document.getElementsByClassName("choice"));
+const choiceElements = Array.from(document.getElementsByClassName("choice"));
 const nextButton = document.getElementById("next");
 const scoreElement = document.getElementById("score");
 const errorElement = document.getElementById("error");
 
 // Variáveis Globais
 let currentQuestion = 0;
-let acceptingAnswers = false;
 let score = 0;
 let error = 0;
-let answnerChosen = false;
+let answerChosen = false;
 
 // Funções 
+
+function loadQuestion() {
+    const currentQuestionData = questions[currentQuestion];
+    questionElement.innerText = currentQuestionData.question;
+
+    const choices = shuffleArray(currentQuestionData.choices);
+    for (let i = 0; i < choiceElements.length; i++) {
+        choiceElements[i].innerText = choices[i];    
+    }
+
+    answerChosen = false;    
+}
+
+function shuffleArray (array) {
+    let currentIndex = array.length, temporaryValue, randomIndex;
+
+    while (0 != currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+    return array;
+
+    
+}
+
+function checkAnswer(e) {
+    if (answerChosen) {
+        answerChosen = true;
+    }
+    if (e.target.innerText === questions[currentQuestion].answer){
+        score ++;
+        scoreElement.innerText = "Pontuação: " + score;
+        alert("COREEETOO!!!");
+    } else {
+        error ++;
+        errorElement.innerText = "Erros: " + error;
+        alert("EROOOOU!\n" + questions[currentQuestion].answer);
+    }
+};
+choiceElements.forEach((element) => {
+    element.addEventListener("click", checkAnswer);
+});
+   
+
+
+function restartQuiz() {
+    currentQuestion = 0;
+    score = 0;
+    error = 0;
+    scoreElement.innerText = "Pontuação: " + score;
+    errorElement.innerText = "Erros: " + error;
+    loadQuestion(); 
+}
+
+nextButton.addEventListener("click", () => {
+    if (!answerChosen) {
+        alert("Escolha uma resposta antes de prosseguir!");
+        return;
+    }
+    currentQuestion++;
+    if (currentQuestion < questions.length) {
+        loadQuestion();
+    }
+    else{
+        alert("Fim do Quiz. Você acertou " + score + " de " + questions.length + " perguntas.");
+        restartQuiz();
+    }
+
+});
+
+loadQuestion();
