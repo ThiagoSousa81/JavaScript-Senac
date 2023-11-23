@@ -8,4 +8,6 @@
 
 ## Links
 
-- ### [Calculadora Simples](https://thiagosousa81.github.io/JavaScript-Senac/)
+- ### [Calculadora Simples](https://thiagosousa81.github.io/JavaScript-Senac/calculadora)
+- ### [Quiz](https://thiagosousa81.github.io/JavaScript-Senac/quiz)
+
