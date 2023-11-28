@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,20 +10,18 @@
 <body>
     <h1>Bateria Eletrônica</h1>
     <p>Pressione as teclas do seu teclado ou escreva sua composição</p>
-    <div class="keys">
-        <div class="key">
-            <div class="key" data-key="q">Q</div>
-            <div class="key" data-key="w">W</div>
-            <div class="key" data-key="e">E</div>
+    <div class="keys">        
+        <div data-key="keyq" class="key">Q</div>
+        <div data-key="keyw" class="key">W</div>
+        <div data-key="keye" class="key">E</div>
 
-            <div class="key" data-key="a">A</div>
-            <div class="key" data-key="s">S</div>
-            <div class="key" data-key="d">D</div>
+        <div data-key="keya" class="key">A</div>
+        <div data-key="keys" class="key">S</div>
+        <div data-key="keyd" class="key">D</div>
 
-            <div class="key" data-key="z">Z</div>
-            <div class="key" data-key="x">X</div>
-            <div class="key" data-key="c"></div>
-    
+        <div data-key="keyz" class="key">Z</div>
+        <div data-key="keyx" class="key">X</div>
+        <div data-key="keyc" class="key">C</div>
     </div>
 
     <div class="composer">
@@ -36,9 +34,17 @@
     </div>
 
     <footer>
-        <p>Desenvolvido por <a href="https://github.com/thiagosousa81" target="_blank" rel="noopener noreferrer">Thiago Sousa §</a></p>
+        <p>Desenvolvido por&nbsp;</p> <a href="https://github.com/thiagosousa81" target="_blank" rel="noopener noreferrer"> Thiago Sousa&nbsp;<img src="https://avatars.githubusercontent.com/u/106121095?s=400&u=45a1a1ef76f967f5738abbda15e9d86a17e8455b&v=4" alt="Logo"></a>
     </footer>
 
-    <audio src="" id="s_keyq"></audio>
+    <audio id="s_keyq" src="sounds/keyq.wav"></audio>
+    <audio id="s_keyw" src="sounds/keyw.wav"></audio>
+    <audio id="s_keye" src="sounds/keye.wav"></audio>
+    <audio id="s_keya" src="sounds/keya.wav"></audio>
+    <audio id="s_keys" src="sounds/keys.wav"></audio>
+    <audio id="s_keyd" src="sounds/keyd.wav"></audio>
+    <audio id="s_keyz" src="sounds/keyz.wav"></audio>
+    <audio id="s_keyx" src="sounds/keyx.wav"></audio>
+    <audio id="s_keyc" src="sounds/keyc.wav"></audio>
 </body>
 </html>
