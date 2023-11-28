@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    background-image: linear-gradient(45deg,  #333, rgb(230, 104, 0),  orange, black)
+}
+
+h1, p{
+    text-align: center;
+    color: white;
+    margin-block: 20px;
+}
+
+.keys {
+    display: grid;    
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.key {
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: grab;
+
+}
+
+
+/*
+.key:hover {
+    background-color: rgb(184, 177, 177);
+    color: black;
+    border: 2px solid rgb(38, 38, 38);
+    transition: all 0.1s ease-in-out;    
+    box-shadow: 0px 0px 4px rgba(255 255 0 0.4);
+}*/
+
+.key.active {
+    border: 2px solid rgb(38, 38, 38);
+    box-shadow: 0px 0px 4px rgba(255 255 0 0.4);
+    transition: all 0.1s ease-in-out;    
+    transform: rotate(5deg) scale(1.1);
+    background-color: rgb(190, 177, 86);
+    color: black;
+}
+
+.composer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px;
+    gap: 10px;
+    
+}
+
+.composer input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+    height: 50px;
+    width: 250px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 14pt;
+    outline: none;    
+}
+
+.composer button {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #333;
+    height: 50px;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    font-size: 16pt;
+}
+
+.composer button:hover {
+    background-color: rgb(230, 104, 0);
+    cursor: grab;    
+}
+
+.volume {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.volume label {
+    margin-right: 10px;
+    color: white;    
+}
+
+.volume input[type="range"] {    
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition:.2s;
+    transition: opacity 2s;
+}
+
+.volume input[type="range"]:hover {
+    opacity: 1;
+}
+
+.volume input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #333;
+    cursor: grab;
+}
+
+footer {
+    text-align: center;
+    margin-block: 20px;
+    color: #fff;
+    font-size: 11pt;       
+    display: flex;
+    flex-direction: row;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
