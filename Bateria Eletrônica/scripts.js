@@ -44,8 +44,8 @@ volumeControl.addEventListener('input', (evento) => {
     setVolume(evento.target.value);
 });
 
-function setVolume(value) {
-    const audioElement = document.querySelector('audio');
+function setVolume(volume) {
+    const audioElement = document.querySelectorAll('audio');
     audioElement.forEach((audio) => {
         audio.volume = volume;
     });
