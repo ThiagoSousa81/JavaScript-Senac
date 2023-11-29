@@ -8,10 +8,93 @@
     <script src="/js/index.js" defer></script>
 </head>
 <body>
-    
+
+    <header>
+        <h1 class="header-title">Super Calculadora</h1>
+        <div class="header-form-container">
+            <form action="" class="header-form">
+                <label for="num1">Primeiro número</label>
+                <input type="number" id="num1"/>
+
+                <label for="num2">Segundo número</label>
+                <input type="number" id="num2"/>
+                
+                <button type="button" id="btn-calcular">
+                    Calcular
+                </button>
+            </form>
+        </div>
+    </header>
+
+    <main>
+        <div class="result-area">
+            <table class="result-table">
+                <thead>
+                    <tr>
+                        <th>Operação A para B</th>
+                        <th>Resultado A para B</th>
+                        <th>Resultado B para A</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Soma</td>
+                        <td id="resultado-soma">0</td>
+                        <td id="resultado-soma-instead">0</td>
+                    </tr>
+                    <tr>
+                        <td>Subtração</td>
+                        <td id="resultado-subtracao">0</td>
+                        <td id="resultado-subtracao-instead">0</td>
+                    </tr>
+                    <tr>
+                        <td>Multiplicação</td>
+                        <td id="resultado-multiplicacao">0</td>
+                        <td id="resultado-multiplicacao-instead">0</td>
+                    </tr>
+                    <tr>
+                        <td>Divisão</td>
+                        <td id="resultado-divisao">0</td>
+                        <td id="resultado-divisao-instead">0</td>
+                    </tr>
+                    <tr>
+                        <td>Potência</td>
+                        <td id="resultado-potencia">0</td>
+                        <td id="resultado-potencia-instead">0</td>
+                    </tr>
+                    <tr>
+                        <td>Raíz Quadrada</td>
+                        <td id="resultado-raiz-quadrada">0</td>
+                        <td id="resultado-raiz-quadrada-instead">0</td>
+                    </tr>
+                    <tr>
+                        <td>Porcentagem</td>
+                        <td id="resultado-porcentagem">0</td>
+                        <td id="resultado-porcentagem-instead">0</td>
+                    </tr>
+                    <tr>
+                        <td>Fatorial</td>
+                        <td id="resultado-fatorial">0</td>
+                        <td id="resultado-fatorial-instead">0</td>
+                    </tr>
+                    <tr>
+                        <td>Média</td>
+                        <td id="resultado-media">0</td>
+                        <td id="resultado-media-instead">0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por&nbsp;</p> <a href="https://github.com/thiagosousa81" target="_blank" rel="noopener noreferrer"> Thiago Sousa&nbsp;<img src="https://avatars.githubusercontent.com/u/106121095?s=400&amp;u=45a1a1ef76f967f5738abbda15e9d86a17e8455b&amp;v=4" alt="Logo"></a>
+    </footer>
+
+    <!--
     <script type="module">
         import { App } from "./js/index.js"
         App.initialize(document);
-    </script>
+    </script>-->
+
 </body>
 </html>
