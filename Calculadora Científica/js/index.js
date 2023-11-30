@@ -40,6 +40,39 @@ export class App {
         
         const resultadoMedia = document.getElementbyId("resultado-media");
         const resultadoMediaInstead = document.getElementbyId("resultado-media-instead");
+
+        btnCalcular.addEventListener("click", () => {
+            resultadoDivisao.innerHTML = divisao(num1.value, num2.value);
+            resultadoDivisaoInstead.innerHTML = divisao(num2.value, num1.value);
+
+            resultadoFatorial.innerHTML = fatorial(num1.value);
+            resultadoFatorialInstead.innerHTML = fatorial(num2.value);
+
+            resultadoMedia.innerHTML = media(num1.value, num2.value);
+            resultadoMediaInstead.innerHTML = media(num2.value, num1.value);
+
+            resultadoMultiplicacao.innerHTML = multiplicacao(num1.value, num2.value);
+            resultadoMultiplicacaoInstead.innerHTML = multiplicacao(num2.value, num1.value);
+
+            resultadoMultiplicacao.innerHTML = multiplicacao(num1.value, num2.value);
+            resultadoMultiplicacaoInstead.innerHTML = multiplicacao(num2.value, num1.value);
+
+            resultadoPorcentagem.innerHTML = porcentagem(num1.value, num2.value) + "%";
+            resultadoPorcentagemInstead.innerHTML = porcentagem(num2.value, num1.value) + "%";
+
+            resultadoPotencia.innerHTML = potencia(num1.value, num2.value);
+            resultadoPotenciaInstead.innerHTML = potencia(num2.value, num1.value);
+
+            resultadoRaizQuadrada.innerHTML = raizQuadrada(num1.value);
+            resultadoRaizQuadradaInstead.innerHTML = raizQuadrada(num2.value);
+
+            resultadoSoma.innerHTML = soma(num1.value, num2.value);
+            resultadoSomaInstead.innerHTML = soma(num2.value, num1.value);
+
+            resultadoSubtracao.innerHTML = subtracao(num1.value, num2.value);
+            resultadoSubtracaoInstead.innerHTML = subtracao(num2.value, num1.value);
+
+        });
         
         
     }
