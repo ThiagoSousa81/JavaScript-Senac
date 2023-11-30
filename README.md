@@ -11,3 +11,4 @@
 - ### [Calculadora Simples](https://thiagosousa81.github.io/JavaScript-Senac/calculadora)
 - ### [Quiz](https://thiagosousa81.github.io/JavaScript-Senac/quiz)
 - ### [Bateria Eletrônica](https://thiagosousa81.github.io/JavaScript-Senac/bateria)
+- ### [Calculadora Científica](https://thiagosousa81.github.io/JavaScript-Senac/cientifica)
