@@ -56,7 +56,7 @@ header {
     color: white;
     font-weight: bold;
     font-size: larger;
-    cursor: progress;
+    cursor: grab;
 }
 
 .result-area {
