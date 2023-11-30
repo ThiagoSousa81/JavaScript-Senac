@@ -10,36 +10,38 @@ import { porcentagem } from "./math/porcentagem.js";
 
 export class App {
     static initialize(document) {
-        const btnCalcular  = document.getElementbyId("btn-calcular");
-        const num1 = document.getElementbyId("num1");
-        const num2 = document.getElementbyId("num2");
 
-        const resultadoSoma = document.getElementbyId("resultado-soma");
-        const resultadoSomaInstead = document.getElementbyId("resultado-soma-instead");
+        const btnCalcular = document.getElementById("btn-calcular");
+       
+        const num1 = document.getElementById("num1");
+        const num2 = document.getElementById("num2");
 
-        const resultadoSubtracao = document.getElementbyId("resultado-subtracao");
-        const resultadoSubtracaoInstead = document.getElementbyId("resultado-subtracao-instead");
+        const resultadoSoma = document.getElementById("resultado-soma");
+        const resultadoSomaInstead = document.getElementById("resultado-soma-instead");
 
-        const resultadoMultiplicacao = document.getElementbyId("resultado-multiplicacao");
-        const resultadoMultiplicacaoInstead = document.getElementbyId("resultado-multiplicacao-instead");
+        const resultadoSubtracao = document.getElementById("resultado-subtracao");
+        const resultadoSubtracaoInstead = document.getElementById("resultado-subtracao-instead");
 
-        const resultadoDivisao = document.getElementbyId("resultado-divisao");
-        const resultadoDivisaoInstead = document.getElementbyId("resultado-divisao-instead");
+        const resultadoMultiplicacao = document.getElementById("resultado-multiplicacao");
+        const resultadoMultiplicacaoInstead = document.getElementById("resultado-multiplicacao-instead");
 
-        const resultadoRaizQuadrada = document.getElementbyId("resultado-raiz-quadrada");
-        const resultadoRaizQuadradaInstead = document.getElementbyId("resultado-raiz-quadrada-instead");
+        const resultadoDivisao = document.getElementById("resultado-divisao");
+        const resultadoDivisaoInstead = document.getElementById("resultado-divisao-instead");
+
+        const resultadoRaizQuadrada = document.getElementById("resultado-raiz-quadrada");
+        const resultadoRaizQuadradaInstead = document.getElementById("resultado-raiz-quadrada-instead");
         
-        const resultadoPotencia = document.getElementbyId("resultado-potencia");
-        const resultadoPotenciaInstead = document.getElementbyId("resultado-potencia-instead");
+        const resultadoPotencia = document.getElementById("resultado-potencia");
+        const resultadoPotenciaInstead = document.getElementById("resultado-potencia-instead");
         
-        const resultadoPorcentagem = document.getElementbyId("resultado-porcentagem");
-        const resultadoPorcentagemInstead = document.getElementbyId("resultado-porcentagem-instead");
+        const resultadoPorcentagem = document.getElementById("resultado-porcentagem");
+        const resultadoPorcentagemInstead = document.getElementById("resultado-porcentagem-instead");
 
-        const resultadoFatorial = document.getElementbyId("resultado-fatorial");
-        const resultadoFatorialInstead = document.getElementbyId("resultado-fatorial-instead");
+        const resultadoFatorial = document.getElementById("resultado-fatorial");
+        const resultadoFatorialInstead = document.getElementById("resultado-fatorial-instead");
         
-        const resultadoMedia = document.getElementbyId("resultado-media");
-        const resultadoMediaInstead = document.getElementbyId("resultado-media-instead");
+        const resultadoMedia = document.getElementById("resultado-media");
+        const resultadoMediaInstead = document.getElementById("resultado-media-instead");
 
         btnCalcular.addEventListener("click", () => {
             resultadoDivisao.innerHTML = divisao(num1.value, num2.value);
