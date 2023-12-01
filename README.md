@@ -12,3 +12,4 @@
 - ### [Quiz](https://thiagosousa81.github.io/JavaScript-Senac/quiz)
 - ### [Bateria Eletrônica](https://thiagosousa81.github.io/JavaScript-Senac/bateria)
 - ### [Calculadora Científica](https://thiagosousa81.github.io/JavaScript-Senac/cientifica)
+- ### [Relógio](https://thiagosousa81.github.io/JavaScript-Senac/relogio)
